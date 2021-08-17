@@ -16,7 +16,7 @@ move "%temp%/dark.skin7" "C:\Program Files\Open-Shell\Skins\dark.skin7"
 "C:\Program Files\Open-Shell\startmenu.exe" -xml %temp%/openshell.xml
 
 :: DELETING TEMP FILES
-del "%temp%/openshell.exe"
-del "%temp%/openshell.xml"
+del "%temp%/openshell.exe" /q
+del "%temp%/openshell.xml" /q
 
 exit

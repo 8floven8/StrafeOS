@@ -13,7 +13,7 @@ powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/iidanL/
 regedit.exe /S %temp%/7z.reg
 
 :: DELETING TEMP FILES
-del %temp%/7z.exe
-del %temp%/7z.reg
+del "%temp%/7z.exe" /q
+del "%temp%/7z.reg" /q
 
 exit
