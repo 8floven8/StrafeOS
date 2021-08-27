@@ -4,7 +4,7 @@
 :: CHECK FOR ADMIN PRIVILEGES
 dism >nul 2>&1 || (echo This script must be Run as Administrator. && pause && exit /b 1)
 
-IF EXIST "C:\Users\Daniil\AppData\Local\Discord" ( goto DEBLOAT ) 
+IF EXIST "%userprofile%\AppData\Local\Discord" ( goto DEBLOAT ) 
 ELSE (
 
 :: DOWNLOADING DISCORD INSTALLER
